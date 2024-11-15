@@ -1,0 +1,11 @@
+## Install Lib
+pip freeze > requirements.txt
+
+## Start Backend
+python server.py
+
+## Start Frontend 
+npm run dev
+
+
+

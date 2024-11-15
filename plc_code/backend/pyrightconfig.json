@@ -1,0 +1,14 @@
+{
+  "venvPath": ".",
+  "venv": "venv",
+  "analysis": {
+      "autoImportCompletions": true,
+      "useLibraryCodeForTypes": true,
+      "diagnosticMode": "openFilesOnly",
+      "typeCheckingMode": "basic"
+  },
+  "include": ["**/*.py"],
+  "exclude": ["**/node_modules", "**/__pycache__"],
+  "pythonVersion": "3.9",
+  "pythonPlatform": "All"
+}
