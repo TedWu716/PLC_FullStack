@@ -1,0 +1,20 @@
+## This script is based on Linux OS ##
+
+## Install Required Library
+ 1. Using terminal and point to the backend directory
+
+ 2. create virtual environment using python -m venv venv
+    - backend
+        pip install -r requirements.txt
+    - frontend
+        npm install
+
+
+## Start Backend
+python server.py 
+
+## Start Frontend 
+npm run dev
+
+
+
