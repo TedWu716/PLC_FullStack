@@ -1,0 +1,148 @@
+Prompt:
+Please generate a piece of Structured Text (ST) code that complies with the IEC 61131-3 standard and is specifically compatible with OpenPLC Runtime 3. Ensure that the code adheres to the following requirements and guidelines:
+1. Global and External Variable Definitions
+Define all global variables using VAR_GLOBAL within a CONFIGURATION block to comply with OpenPLC Runtime 3's variable scope requirements.
+In each PROGRAM and FUNCTION block, reference the global variables using VAR_EXTERNAL to maintain proper variable scope and adherence to the runtime's standard practices.
+2. Variable Declaration Positioning
+Global variables must only be declared within the CONFIGURATION block and referenced via VAR_EXTERNAL in PROGRAM and FUNCTION blocks. Do not declare global variables outside of these specific contexts.
+Ensure all variables are declared within the appropriate blocks and that their scope is clearly defined.
+3. Comments and Parsing Considerations
+Use comments carefully to avoid potential parsing issues during compilation in OpenPLC Runtime 3. Ensure comments are placed in a way that does not disrupt the logic of the code.
+Use standard comment formats (* ... *) for multi-line comments and // for single-line comments. Ensure comments do not inadvertently interfere with compilation or execution.
+4. Syntax Consistency and Naming Conventions
+Follow OpenPLC Runtime 3's specific syntax rules strictly, including proper variable naming, referencing, and input/output declarations. Improper syntax or formatting can lead to compilation errors.
+If encountering syntax errors such as "unknown syntax error," ensure that all code structures, such as VAR, VAR_GLOBAL, VAR_EXTERNAL, and related blocks, are formatted correctly and aligned with OpenPLC Runtime 3's expected syntax.
+5. Code Structure and Block Organization
+Adhere to OpenPLC Runtime 3's structural requirements for CONFIGURATION, PROGRAM, TASK, and FUNCTION blocks. Proper organization and sequencing of these blocks are essential for successful compilation.
+Maintain logical hierarchy and organization of blocks, ensuring all elements are placed correctly according to the standard.
+6. Error Handling and Persistent Issues
+If compilation issues persist despite multiple attempts at correction, review the code structure, variable scope definitions, and block arrangements to ensure full compliance with OpenPLC Runtime 3's standards.
+Include basic error-handling mechanisms and logging capabilities to assist with debugging and provide feedback on code execution states.
+7. Example Code
+Provide an example of code that adheres to these requirements:
+plaintext
+
+
+CONFIGURATION MyConfig
+VAR_GLOBAL
+    globalVar1 : BOOL; // Example global variable
+END_VAR
+RESOURCE MyResource ON PLC
+    TASK mainTask(INTERVAL := T#20ms, PRIORITY := 0);
+    PROGRAM MyProgram WITH mainTask : PLC_PRG;
+END_RESOURCE
+END_CONFIGURATION
+
+PROGRAM PLC_PRG
+VAR_EXTERNAL
+    globalVar1 : BOOL; // Referencing global variable
+END_VAR
+
+(* Toggle the global variable based on a condition *)
+IF globalVar1 THEN
+    globalVar1 := FALSE; // Simple toggle logic
+ELSE
+    globalVar1 := TRUE;
+END_IF
+
+END_PROGRAM
+8. Output Format
+The generated code must follow all specified guidelines and be compatible with OpenPLC Runtime 3. Include structured comments to describe the functionality, ensuring that all block structures, variable definitions, and references comply with the IEC 61131-3 standard. Provide clear explanations using appropriate comment syntax within the code where necessary.Prompt:
+Please generate a piece of Structured Text (ST) code that complies with the IEC 61131-3 standard and is specifically compatible with OpenPLC Runtime 3. Ensure that the code adheres to the following requirements and guidelines:
+1. Global and External Variable Definitions
+Define all global variables using VAR_GLOBAL within a CONFIGURATION block to comply with OpenPLC Runtime 3's variable scope requirements.
+In each PROGRAM and FUNCTION block, reference the global variables using VAR_EXTERNAL to maintain proper variable scope and adherence to the runtime's standard practices.
+2. Variable Declaration Positioning
+Global variables must only be declared within the CONFIGURATION block and referenced via VAR_EXTERNAL in PROGRAM and FUNCTION blocks. Do not declare global variables outside of these specific contexts.
+Ensure all variables are declared within the appropriate blocks and that their scope is clearly defined.
+3. Comments and Parsing Considerations
+Use comments carefully to avoid potential parsing issues during compilation in OpenPLC Runtime 3. Ensure comments are placed in a way that does not disrupt the logic of the code.
+Use standard comment formats (* ... *) for multi-line comments and // for single-line comments. Ensure comments do not inadvertently interfere with compilation or execution.
+4. Syntax Consistency and Naming Conventions
+Follow OpenPLC Runtime 3's specific syntax rules strictly, including proper variable naming, referencing, and input/output declarations. Improper syntax or formatting can lead to compilation errors.
+If encountering syntax errors such as "unknown syntax error," ensure that all code structures, such as VAR, VAR_GLOBAL, VAR_EXTERNAL, and related blocks, are formatted correctly and aligned with OpenPLC Runtime 3's expected syntax.
+5. Code Structure and Block Organization
+Adhere to OpenPLC Runtime 3's structural requirements for CONFIGURATION, PROGRAM, TASK, and FUNCTION blocks. Proper organization and sequencing of these blocks are essential for successful compilation.
+Maintain logical hierarchy and organization of blocks, ensuring all elements are placed correctly according to the standard.
+6. Error Handling and Persistent Issues
+If compilation issues persist despite multiple attempts at correction, review the code structure, variable scope definitions, and block arrangements to ensure full compliance with OpenPLC Runtime 3's standards.
+Include basic error-handling mechanisms and logging capabilities to assist with debugging and provide feedback on code execution states.
+7. Example Code
+Provide an example of code that adheres to these requirements:
+plaintext
+
+
+CONFIGURATION MyConfig
+VAR_GLOBAL
+    globalVar1 : BOOL; // Example global variable
+END_VAR
+RESOURCE MyResource ON PLC
+    TASK mainTask(INTERVAL := T#20ms, PRIORITY := 0);
+    PROGRAM MyProgram WITH mainTask : PLC_PRG;
+END_RESOURCE
+END_CONFIGURATION
+
+PROGRAM PLC_PRG
+VAR_EXTERNAL
+    globalVar1 : BOOL; // Referencing global variable
+END_VAR
+
+(* Toggle the global variable based on a condition *)
+IF globalVar1 THEN
+    globalVar1 := FALSE; // Simple toggle logic
+ELSE
+    globalVar1 := TRUE;
+END_IF
+
+END_PROGRAM
+8. Output Format
+The generated code must follow all specified guidelines and be compatible with OpenPLC Runtime 3. Include structured comments to describe the functionality, ensuring that all block structures, variable definitions, and references comply with the IEC 61131-3 standard. Provide clear explanations using appropriate comment syntax within the code where necessary.Prompt:
+Please generate a piece of Structured Text (ST) code that complies with the IEC 61131-3 standard and is specifically compatible with OpenPLC Runtime 3. Ensure that the code adheres to the following requirements and guidelines:
+1. Global and External Variable Definitions
+Define all global variables using VAR_GLOBAL within a CONFIGURATION block to comply with OpenPLC Runtime 3's variable scope requirements.
+In each PROGRAM and FUNCTION block, reference the global variables using VAR_EXTERNAL to maintain proper variable scope and adherence to the runtime's standard practices.
+2. Variable Declaration Positioning
+Global variables must only be declared within the CONFIGURATION block and referenced via VAR_EXTERNAL in PROGRAM and FUNCTION blocks. Do not declare global variables outside of these specific contexts.
+Ensure all variables are declared within the appropriate blocks and that their scope is clearly defined.
+3. Comments and Parsing Considerations
+Use comments carefully to avoid potential parsing issues during compilation in OpenPLC Runtime 3. Ensure comments are placed in a way that does not disrupt the logic of the code.
+Use standard comment formats (* ... *) for multi-line comments and // for single-line comments. Ensure comments do not inadvertently interfere with compilation or execution.
+4. Syntax Consistency and Naming Conventions
+Follow OpenPLC Runtime 3's specific syntax rules strictly, including proper variable naming, referencing, and input/output declarations. Improper syntax or formatting can lead to compilation errors.
+If encountering syntax errors such as "unknown syntax error," ensure that all code structures, such as VAR, VAR_GLOBAL, VAR_EXTERNAL, and related blocks, are formatted correctly and aligned with OpenPLC Runtime 3's expected syntax.
+5. Code Structure and Block Organization
+Adhere to OpenPLC Runtime 3's structural requirements for CONFIGURATION, PROGRAM, TASK, and FUNCTION blocks. Proper organization and sequencing of these blocks are essential for successful compilation.
+Maintain logical hierarchy and organization of blocks, ensuring all elements are placed correctly according to the standard.
+6. Error Handling and Persistent Issues
+If compilation issues persist despite multiple attempts at correction, review the code structure, variable scope definitions, and block arrangements to ensure full compliance with OpenPLC Runtime 3's standards.
+Include basic error-handling mechanisms and logging capabilities to assist with debugging and provide feedback on code execution states.
+7. Example Code
+Provide an example of code that adheres to these requirements:
+plaintext
+
+
+CONFIGURATION MyConfig
+VAR_GLOBAL
+    globalVar1 : BOOL; // Example global variable
+END_VAR
+RESOURCE MyResource ON PLC
+    TASK mainTask(INTERVAL := T#20ms, PRIORITY := 0);
+    PROGRAM MyProgram WITH mainTask : PLC_PRG;
+END_RESOURCE
+END_CONFIGURATION
+
+PROGRAM PLC_PRG
+VAR_EXTERNAL
+    globalVar1 : BOOL; // Referencing global variable
+END_VAR
+
+(* Toggle the global variable based on a condition *)
+IF globalVar1 THEN
+    globalVar1 := FALSE; // Simple toggle logic
+ELSE
+    globalVar1 := TRUE;
+END_IF
+
+END_PROGRAM
+8. Output Format
+The generated code must follow all specified guidelines and be compatible with OpenPLC Runtime 3. Include structured comments to describe the functionality, ensuring that all block structures, variable definitions, and references comply with the IEC 61131-3 standard. Provide clear explanations using appropriate comment syntax within the code where necessary.

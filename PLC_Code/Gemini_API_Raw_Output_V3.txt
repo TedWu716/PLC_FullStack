@@ -1,0 +1,30 @@
+```st
+// IEC 61131-3 Structured Text code compatible with OpenPLC Runtime 3
+
+(* CONFIGURATION Block *)
+CONFIGURATION MyConfig
+    VAR_GLOBAL
+        globalVar1 : BOOL; // Example global variable
+    END_VAR
+    
+    RESOURCE MyResource ON PLC
+        TASK mainTask(INTERVAL := T#20ms, PRIORITY := 0);
+            PROGRAM MyProgram WITH mainTask : PLC_PRG;
+        END_TASK
+    END_RESOURCE
+END_CONFIGURATION
+
+(* PROGRAM Block *)
+PROGRAM PLC_PRG
+    VAR_EXTERNAL
+        globalVar1 : BOOL; // Referencing global variable
+    END_VAR
+
+    (* Toggle the global variable based on a condition *)
+    IF globalVar1 THEN
+        globalVar1 := FALSE; // Simple toggle logic
+    ELSE
+        globalVar1 := TRUE;
+    END_IF
+END_PROGRAM
+```
