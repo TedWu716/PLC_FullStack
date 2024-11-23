@@ -1,15 +1,15 @@
-# 🤖 PLC Fullstack Project
+# PLC Fullstack Project
 
 A full-stack application for PLC programming using OpenPLC and AI assistance.
 
-## 📋 Prerequisites
+## Prerequisites
 
 - **Linux Operating System**
 - **Python 3.10** or higher
 - **Node.js** and **npm**
 - **OpenPLC Runtime** installed
 
-## 🗂️ Project Structure
+## Project Structure
 ```diff
 PLC_FullStack/
 + ├── backend/
@@ -22,7 +22,7 @@ PLC_FullStack/
 - └── prompt/
 ```
 
-## 🚀 Installation
+## Installation
 
 ### **Step 1:** Clone the Repository
 ```bash
@@ -68,7 +68,7 @@ cd frontend
 npm install
 ```
 
-## 🎯 Running the Application
+## Running the Application
 
 ### **Start Backend Server**
 ```bash
@@ -85,7 +85,7 @@ cd frontend
 npm run dev
 ```
 
-## ✨ Features
+## Features
 
 - **AI-assisted PLC programming** using Google's Gemini API
 - **Structured Text (ST)** code generation and compilation
@@ -93,7 +93,7 @@ npm run dev
 - **Real-time** feedback and error handling
 - **Web-based** user interface
 
-## 📦 Required Packages
+## Required Packages
 
 ### **Backend Dependencies**
 ```python
@@ -106,7 +106,7 @@ google-generativeai
 // Add major frontend dependencies
 ```
 
-## ⚙️ Configuration
+## Configuration
 
 ### **Backend Configuration**
 - **Google Gemini API key** required
@@ -117,7 +117,7 @@ google-generativeai
 - Ensure proper API endpoint configuration
 - (other frontend-specific configurations)
 
-## 👨‍💻 Development
+## Development
 
 ### **Backend Development**
 - **Python 3.10+** required
@@ -129,7 +129,7 @@ google-generativeai
 - Follow JavaScript/TypeScript best practices
 - Component-based architecture
 
-## 🔧 Troubleshooting
+## Troubleshooting
 
 Common issues and solutions:
 
@@ -151,8 +151,3 @@ source venv/bin/activate
 - ✔️ Verify OpenPLC installation
 - ✔️ Check file paths and permissions
 - ✔️ Review error logs in Log directory
-
----
-<div align="center">
-<strong>Made with ❤️ by Your Team</strong>
-</div>
