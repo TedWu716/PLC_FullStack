@@ -133,6 +133,7 @@ def RepromptModel(Chat_Session):
     with open(GEMINI_OUTPUT_FILE, 'w') as Output:    
         Output.write(New_Response)
 
+
 def get_api_key(keychain_path):
     print(f"Reading keychain from: {keychain_path}")
     try:
@@ -190,6 +191,13 @@ def extract_from_keychain(keychain_path, key_type):
         print(f"Error reading from keychain: {e}")
         exit(1)
     raise ValueError(f"{key_type} not found in keychain file")
+
+#***************************************************************************************************************************************************************************
+
+#Program Entry
+
+#****************************************************************************************************************************************************************************
+
 
 
 if __name__ == '__main__':
