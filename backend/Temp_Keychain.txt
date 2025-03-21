@@ -1,8 +1,0 @@
-# Google API Key 
-AIzaSyCnOE60LcTeeHB38KBNyXogr1rzbjrzVHs
-
-# SSH Username 
-Ted Wu
-
-# SSH Password 
-LLM4PLC
