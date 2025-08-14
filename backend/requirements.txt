@@ -30,6 +30,6 @@ click==8.1.7
 tqdm==4.67.0
 
 # Data Processing
-protobuf==5.28.3
+protobuf==5.29.5
 grpcio==1.67.1
 pydantic_core==2.23.4
